@@ -1,0 +1,111 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* colors */
+  --clr-red: #c70d0e;
+  --clr-red-200: #c32e2e;
+  --clr-white: white;
+  --clr-gray-700: #fffbfb;
+  --clr-gray-200: #f4f4f4;
+  --clr-orange-200: #f5efe8;
+  --clr-green-200: #f2feff;
+  --clr-blue-200: #f0f6ff;
+  --clr-balck-700: #0b0b0b;
+
+  /* spacing  */
+  --space-50: 0.5rem;
+  --space-100: 1rem;
+  --space-200: 2rem;
+  --space-300: 3rem;
+  --space-400: 4rem;
+  --space-500: 5rem;
+
+  /* font sizes */
+  --text-900: 33px;
+  --text-800: 24px;
+  --text-700: 18px;
+  --text-600: 18px; /* 1exceptions */
+  --text-500: 12px; /* 1 exceptions*/
+  --text-550: 15px;
+  --text-400: 14px;
+  --text-300: 12px;
+  --text-350: 11px;
+  --text-200: 10px;
+  --text-100: 9px;
+
+  /* border */
+  --border-1: 0.5rem;
+  --border-2: 1rem;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+.mr-1 {
+  margin-right: var(--space-100);
+}
+.px-auto {
+  padding-left: auto !important`;
+  padding-right: auto !important;
+}
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.w-full {
+  width: 100%;
+}
+.card {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  padding: var(--space-100);
+}
+.border-btm {
+  border: var(--border-bottom) solid var(--clr-red);
+}
+.bg-lightblue {
+  background: var(--clr-blue-200);
+}
+.bg-gray {
+  background: var(--clr-gray-200);
+}
+
+/* Tablet screens */
+@media (min-width: 768px) {
+}
+
+/* Desltp[ screems */
+@media (min-width: 992px) {
+  :root {
+    /* font sizes */
+    --text-900: 62px;
+    --text-800: 45px;
+    --text-700: 35px;
+    --text-600: 28px;
+    --text-500: 25px;
+    --text-550: 24px;
+    --text-400: 22px;
+    --text-300: 20px;
+    --text-350: 19px;
+    --text-200: 16px;
+    --text-100: 12px;
+  }
+}
