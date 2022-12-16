@@ -6,18 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaizer Farms</title>
     <!-- link to css -->
-    <link rel="stylesheet" type="text/tailwindcss" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <nav>
-      <div>Logo</div>
-      <div>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Products</a>
-        <a href="#">About Us</a>
+    <nav class="bg-dark flex flex-between container-fluid">
+      <div class="text-white">Logo</div>
+      <div class="navLinks">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Services</a>
+        <a href="#" class="link">Products</a>
+        <a href="#" class="link">About Us</a>
       </div>
-      <div class="menu"><img src="assets/icons/menu.png" alt="menu" /></div>
+      <button class="menuIcon" onclick="toggleMenu()">
+        <img src="assets/icons/menu.png" alt="menu" />
+      </button>
     </nav>
+
+    <section class="header container-fluid text-white">
+      <div class="introText">
+        <h1 class="mainTitle text-center">
+          We sell fresh
+          <span id="underlined"
+            >beef <img src="assets/icons/underline.svg" alt=""
+          /></span>
+          meet at an affordable price.
+        </h1>
+        <p class="text-center my-1 text-550">
+          We sell fresh meat products including pork, beef and chicken and
+          affordable prices
+        </p>
+        <div class="flex-center">
+          <a class="btn">
+            View our products
+            <span class="ml-05"
+              ><img src="assets/icons/arrow.png" alt=">"
+            /></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="approved flex">
+        <!-- user profiles -->
+        <div class="profilesContainer flex">
+          <div class="profileImg">
+            <img src="assets/images/profile-1.png" alt="" />
+          </div>
+          <div class="profileImg">
+            <img src="assets/images/profile-1.png" alt="" />
+          </div>
+          <div class="profileImg">
+            <img src="assets/images/profile-1.png" alt="" />
+          </div>
+        </div>
+
+        <!-- approved text -->
+        <div>
+          <p class="text-500">
+            We're globally accepted and approved by the government
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
