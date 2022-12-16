@@ -13,16 +13,16 @@
       <div class="text-white">Logo</div>
       <div class="navLinks">
         <a href="#" class="link">Home</a>
-        <a href="#" class="link">Services</a>
-        <a href="#" class="link">Products</a>
-        <a href="#" class="link">About Us</a>
+        <a href="#services" class="link">Services</a>
+        <a href="#products" class="link">Products</a>
+        <a href="#about" class="link">About Us</a>
       </div>
       <button class="menuIcon" onclick="toggleMenu()">
         <img src="assets/icons/menu.png" alt="menu" />
       </button>
     </nav>
 
-    <section class="header container-fluid text-white">
+    <section class="header container-fluid text-white mb-4">
       <div class="introText">
         <h1 class="mainTitle text-center">
           We sell fresh
@@ -36,7 +36,7 @@
           affordable prices
         </p>
         <div class="flex-center">
-          <a class="btn">
+          <a class="btn text-300">
             View our products
             <span class="ml-05"
               ><img src="assets/icons/arrow.png" alt=">"
@@ -60,11 +60,372 @@
         </div>
 
         <!-- approved text -->
-        <div>
+        <div class="flex-center">
           <p class="text-500">
             We're globally accepted and approved by the government
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Who we are section -->
+    <section class="about mb-4" id="about">
+      <h2 class="title">Who are we?</h2>
+      <div class="aboutContent flex-between">
+        <div class="container-fluid">
+          <h3 class="subTitle">We are KAIZER Farms</h3>
+          <p>
+            A 50 sow farrow-to-finish open-pen operation, which utilizes IMO and
+            currently produces up to 600 pigs annually. We produce pigs that are
+            sold to various food vendors, restaurants and to customers at the
+            various local markets. Here they are harvested and processed for
+            major grocery food chains. We currently have three employees working
+            in the hog operation. Ato Wright has managed the pork operation for
+            the past 2 years. Our consulting herd veterinarian is Dr. Peter
+            Schneider, DVM.
+          </p>
+        </div>
+        <div class="aboutImage">
+          <img
+            class="w-full"
+            src="assets/images/about-image.png"
+            alt="aboutUs image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services bg-gray py-4 mb-4" id="services">
+      <h2 class="title">Services</h2>
+
+      <div class="servicesContainer flex">
+        <!-- card -->
+        <div class="servicesCard card">
+          <div class="cardImg flex-center">
+            <img src="assets/icons/truck-delivery.png" alt="delivery" />
+          </div>
+          <div class="cardContent">
+            <h4 class="subTitle align-center">Affordable Delivery</h4>
+            <p class="cardData align-center text-300">
+              We offer you with a wide viriety of delivery packages at an
+              affordable price.
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="servicesCard card">
+          <div class="cardImg flex-center">
+            <img src="assets/icons/certified.png" alt="delivery" />
+          </div>
+          <div class="cardContent">
+            <h4 class="subTitle align-center">Certified Workers</h4>
+            <p class="cardData align-center text-300">
+              Our workers are certified and approved to work in animal farm
+              industries.
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="servicesCard card">
+          <div class="cardImg flex-center">
+            <img src="assets/icons/meat.png" alt="delivery" />
+          </div>
+          <div class="cardContent">
+            <h4 class="subTitle align-center">Quality Meat</h4>
+            <p class="cardData align-center text-300">
+              We produce quality meat which meets the industry standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Frozen Products Section -->
+    <section class="products mb-4" id="products">
+      <h2 class="title">Our Frozen Products</h2>
+
+      <div class="tabsContainer">
+        <div class="tabs flex scroll-x hide-scrollbar mb-2 container-fluid">
+          <!-- tab -->
+          <div class="tab flex-center" data-tab-target="#frozen-beef">
+            <div class="tabImg">
+              <img src="assets/images/frozen-beef.png" alt="" />
+            </div>
+            <p>Frozen beef</p>
+          </div>
+          <!-- tab -->
+          <div class="tab flex-center" data-tab-target="#frozen-chicken">
+            <div class="tabImg">
+              <img src="assets/images/frozen-beef.png" alt="" />
+            </div>
+            <p>Frozen chicken</p>
+          </div>
+          <!-- tab -->
+          <div class="tab flex-center" data-tab-target="#frozen-veggies">
+            <div class="tabImg">
+              <img src="assets/images/frozen-beef.png" alt="" />
+            </div>
+            <p>Frozen veggies</p>
+          </div>
+          <!--  -->
+        </div>
+
+        <div class="tabContentList">
+          <!-- Frozen beef tab Content  -->
+          <div
+            id="frozen-beef"
+            class="tabContent active container-fluid flex scroll-x hide-scrollbar"
+            data-tab-content
+          >
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/full-pan-beef.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Full pan beef</h4>
+                <p class="mb-1">100 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/full-pan-beef.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Full pan beef</h4>
+                <p class="mb-1">100 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/full-pan-beef.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Full pan beef</h4>
+                <p class="mb-1">100 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <!-- tabContent end -->
+
+          <!-- Frozen Chicken tab Content  -->
+          <div
+            id="frozen-chicken"
+            class="tabContent container-fluid flex scroll-x hide-scrollbar"
+            data-tab-content
+          >
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/full-chicken.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Full Chicken</h4>
+                <p class="mb-1">300 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/full-chicken.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Full Chicken</h4>
+                <p class="mb-1">300 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/full-chicken.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Full Chicken</h4>
+                <p class="mb-1">300 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <!-- tabContent end -->
+
+          <!-- Frozen Chicken tab Content  -->
+          <div
+            id="frozen-veggies"
+            class="tabContent container-fluid flex scroll-x hide-scrollbar"
+            data-tab-content
+          >
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/veggies.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Frozen Veggies</h4>
+                <p class="mb-1">30 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/veggies.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Frozen Veggies</h4>
+                <p class="mb-1">30 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- product card -->
+            <div class="card">
+              <div class="cardImg">
+                <img src="assets/images/veggies.png" alt="" />
+              </div>
+              <div class="cardContent">
+                <h4 class="mb-05">Frozen Veggies</h4>
+                <p class="mb-1">30 GHC</p>
+
+                <div class="btn text-300 flex-center">
+                  <span class="mr-05"
+                    ><img id="cart" src="assets/icons/cart.png" alt=">"
+                  /></span>
+                  Order now
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <!-- tabContent end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Our customers are happy  -->
+    <section class="customerReviews bg-lightblue py-4 mb-2">
+      <h2 class="title">Our customers are happy</h2>
+
+      <div class="reviews container-fluid flex scroll-x hide-scrollbar">
+        <!-- review card -->
+        <div class="reviewCard card">
+          <div class="reviewHeader flex-start mb-1">
+            <div class="reviewProfileImg">
+              <img src="assets/images/profile-1.png" alt="" />
+            </div>
+            <div class="profileInfo">
+              <h4 class="subtitle">David Cleaves</h4>
+              <small class="text-250">CEO of Zion Thai Restaurant</small>
+            </div>
+          </div>
+          <div class="reviewBody">
+            <p class="text-300">
+              Kaizer Farms produces the best meat I like their meats and it is
+              very affordable and hygienic
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- review card -->
+        <div class="reviewCard card">
+          <div class="reviewHeader flex-start mb-1">
+            <div class="reviewProfileImg">
+              <img src="assets/images/profile-1.png" alt="" />
+            </div>
+            <div class="profileInfo">
+              <h4 class="subtitle">David Cleaves</h4>
+              <small class="text-250">CEO of Zion Thai Restaurant</small>
+            </div>
+          </div>
+          <div class="reviewBody">
+            <p class="text-300">
+              Kaizer Farms produces the best meat I like their meats and it is
+              very affordable and hygienic
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- review card -->
+        <div class="reviewCard card">
+          <div class="reviewHeader flex-start mb-1">
+            <div class="reviewProfileImg">
+              <img src="assets/images/profile-1.png" alt="" />
+            </div>
+            <div class="profileInfo">
+              <h4 class="subtitle">David Cleaves</h4>
+              <small class="text-250">CEO of Zion Thai Restaurant</small>
+            </div>
+          </div>
+          <div class="reviewBody">
+            <p class="text-300">
+              Kaizer Farms produces the best meat I like their meats and it is
+              very affordable and hygienic
+            </p>
+          </div>
+        </div>
+        <!--  -->
       </div>
     </section>
 
