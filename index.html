@@ -36,7 +36,7 @@
           affordable prices
         </p>
         <div class="flex-center">
-          <a class="btn text-300">
+          <a class="btn text-300" href="#products">
             View our products
             <span class="ml-05"
               ><img src="assets/icons/arrow.png" alt=">"
@@ -371,6 +371,7 @@
       <div class="reviews container-fluid flex scroll-x hide-scrollbar">
         <!-- review card -->
         <div class="reviewCard card">
+          <img id="sticker" src="assets/icons/sticker.png" alt="" />
           <div class="reviewHeader flex-start mb-1">
             <div class="reviewProfileImg">
               <img src="assets/images/profile-1.png" alt="" />
@@ -378,6 +379,7 @@
             <div class="profileInfo">
               <h4 class="subtitle">David Cleaves</h4>
               <small class="text-250">CEO of Zion Thai Restaurant</small>
+              <img src="assets/icons/ratings.png" alt="ratings" />
             </div>
           </div>
           <div class="reviewBody">
@@ -390,6 +392,7 @@
         <!--  -->
         <!-- review card -->
         <div class="reviewCard card">
+          <img id="sticker" src="assets/icons/sticker.png" alt="" />
           <div class="reviewHeader flex-start mb-1">
             <div class="reviewProfileImg">
               <img src="assets/images/profile-1.png" alt="" />
@@ -397,6 +400,7 @@
             <div class="profileInfo">
               <h4 class="subtitle">David Cleaves</h4>
               <small class="text-250">CEO of Zion Thai Restaurant</small>
+              <img src="assets/icons/ratings.png" alt="ratings" />
             </div>
           </div>
           <div class="reviewBody">
@@ -409,6 +413,7 @@
         <!--  -->
         <!-- review card -->
         <div class="reviewCard card">
+          <img id="sticker" src="assets/icons/sticker.png" alt="" />
           <div class="reviewHeader flex-start mb-1">
             <div class="reviewProfileImg">
               <img src="assets/images/profile-1.png" alt="" />
@@ -416,6 +421,7 @@
             <div class="profileInfo">
               <h4 class="subtitle">David Cleaves</h4>
               <small class="text-250">CEO of Zion Thai Restaurant</small>
+              <img src="assets/icons/ratings.png" alt="ratings" />
             </div>
           </div>
           <div class="reviewBody">
@@ -428,6 +434,87 @@
         <!--  -->
       </div>
     </section>
+
+    <section class="contact mb-2">
+      <div class="sectionIntro container-fluid">
+        <h2 class="title">Contact Us</h2>
+        <p class="text-550">
+          We've reserved a package for you. Contact us through the forms below
+          and get an amazing discount on your first order. We're looking forward
+          to doing business with you.
+        </p>
+      </div>
+
+      <div class="mapForm">
+        <!-- map -->
+        <div class="map"></div>
+        <div class="form card">
+          <!-- form -->
+          <form action="#">
+            <div class="flex-between mb-05">
+              <label for="name">Name:</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="flex-between mb-05">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" />
+            </div>
+            <div class="inputContainer mb-1">
+              <label for="message">Message: </label>
+              <textarea id="message" cols="30" rows="6"></textarea>
+            </div>
+            <!-- button -->
+            <div class="flex-end">
+              <button type="submit" class="btn text-300 flex-center">
+                Send
+                <span class="ml-05"
+                  ><img id="cart" src="assets/icons/send.png" alt=">"
+                /></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call us now  -->
+    <section class="callUs container-fluid mb-2">
+      <div class="card flex">
+        <div class="cardImage">
+          <img src="assets/icons/hands.png" alt="phone call" />
+        </div>
+        <div class="cardContent">
+          <h3 class="subTitle">Call Us On</h3>
+          <p>+233 024-6664-124</p>
+          <p class="cardInfo text-500">
+            To speak directly to our customer service representative
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="bg-dark container-fluid py-4 text-400">
+      <div class="flex-center mb-3"><h2>Logo</h2></div>
+      <div class="flex-col gap-1 mb-3">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+      </div>
+      <div class="flex-col gap-1 mb-3">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Call Us</a>
+      </div>
+      <div class="flex-col gap-1 mb-3">
+        <p>Social Media</p>
+        <div class="socialLinks">
+          <img src="assets/icons/facebook.png" alt="" />
+          <img src="assets/icons/instagram.png" alt="" />
+          <img src="assets/icons/twitter.png" alt="" />
+        </div>
+      </div>
+    </footer>
 
     <script src="js/index.js"></script>
   </body>
