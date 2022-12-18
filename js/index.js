@@ -22,11 +22,16 @@ console.log(tabs);
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const tabContent = document.querySelector(tab.dataset.tabTarget);
+    // make selected tab active
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
+
+    //show the tab's content
     allTabContents.forEach((content) => {
       content.classList.remove("active");
     });
     tabContent.classList.add("active");
-    // alert(tab.dataset.tabTarget);
-    console.log(tabContent);
   });
 });
