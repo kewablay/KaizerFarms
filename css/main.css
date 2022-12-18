@@ -32,8 +32,9 @@ button {
   --clr-red: #c70d0e;
   --clr-red-200: #c32e2e;
   --clr-white: white;
-  --clr-gray-700: #fffbfb;
   --clr-gray-200: #f4f4f4;
+  --clr-gray-700: #fffbfb;
+  --clr-gray-900: #636363;
   --clr-orange-200: #f5efe8;
   --clr-green-200: #f2feff;
   --clr-blue-200: #f0f6ff;
@@ -70,16 +71,14 @@ button {
   --index-3: 3;
   --index-4: 4;
   --index-5: 5;
+
+  /* component variables */
+  --tabContents-h: 28rem;
+  --profileImg-w: 30px;
+  --profileImg-h: 40px;
 }
 
 /* utility classes */
-[data-tab-content] {
-  display: none !important;
-}
-.active[data-tab-content] {
-  display: flex !important;
-}
-
 .imgDiv {
   overflow: hidden;
   object-fit: cover;
@@ -181,11 +180,7 @@ button {
 .hide-scrollbar::-webkit-scrollbar {
   display: none !important;
 }
-.card {
-  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  padding: var(--space-100);
-}
+
 .border-btm {
   border: var(--border-bottom) solid var(--clr-red);
 }
@@ -197,13 +192,6 @@ button {
 }
 .bg-dark {
   background-color: black;
-}
-.title {
-  text-align: center;
-  margin-bottom: var(--space-200);
-}
-.subTitle {
-  margin-bottom: var(--space-100);
 }
 .text-white {
   color: white !important;
@@ -230,6 +218,20 @@ button {
 .text-center {
   text-align: center;
 }
+
+/* Component classes */
+.title {
+  text-align: center;
+  margin-bottom: var(--space-200);
+}
+.subTitle {
+  margin-bottom: var(--space-100);
+}
+.card {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  padding: var(--space-100);
+}
 .btn {
   padding: 0.7rem 1rem;
   background: var(--clr-red);
@@ -243,6 +245,7 @@ button {
 .cardImg {
   margin-bottom: var(--space-100);
 }
+
 /* Main page styling */
 
 /* nav */
@@ -283,13 +286,20 @@ nav {
   background: var(--clr-gray-200);
 }
 
-/* main header */
+/* Main header styling */
 .header {
-  /* header variables */
-  --profileImg-w: 30px;
-  --profileImg-h: 40px;
+  /* fallback gradient */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7)
+  );
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
     url("../assets/images/hero-image.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -334,7 +344,7 @@ nav {
   z-index: var(--index-3);
 }
 
-/* Who We Are section */
+/* Who We Are section styles*/
 
 .about .subTitle {
   text-align: center;
@@ -344,7 +354,7 @@ nav {
   gap: var(--space-200);
 }
 
-/* Services section */
+/* Services section styles*/
 .services {
   --servicesCard-w: 18rem;
   /* --servicesCard-h: 8rem; */
@@ -369,6 +379,18 @@ nav {
 }
 
 /* Our products section styles*/
+[data-tab-content] {
+  /* display: none !important; */
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  transition: all 0.55s ease;
+}
+.active[data-tab-content] {
+  /* display: flex !important; */
+  top: 0%;
+  opacity: 1;
+}
 .tabs {
   gap: var(--space-100);
 }
@@ -378,6 +400,15 @@ nav {
   padding: 0.35rem;
   padding-right: calc(var(--space-100) + 0.2rem);
   flex: none;
+  transition: all 0.2s ease;
+}
+.tabs .active {
+  background: var(--clr-gray-900);
+  color: white;
+  border-color: white;
+}
+.tabs .active .tabImg {
+  border: 1px solid white;
 }
 .tabImg {
   --tabImg-w: 40px;
@@ -395,6 +426,11 @@ nav {
 
 .cardContent #cart {
   height: 18px;
+}
+.tabContentList {
+  height: var(--tabContents-h);
+  overflow-y: hidden;
+  position: relative;
 }
 .tabContent {
   gap: var(--space-200);
