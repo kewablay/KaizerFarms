@@ -23,59 +23,61 @@
     </nav>
 
     <section class="header container-fluid text-white mb-4">
-      <div class="introText">
-        <h1 class="mainTitle text-center">
-          We sell fresh
-          <span id="underlined"
-            >beef <img src="assets/icons/underline.svg" alt=""
-          /></span>
-          meet at an affordable price.
-        </h1>
-        <p class="text-center my-1 text-550">
-          We sell fresh meat products including pork, beef and chicken and
-          affordable prices
-        </p>
-        <div class="flex-center">
-          <a class="btn text-300" href="#products">
-            View our products
-            <span class="ml-05"
-              ><img src="assets/icons/arrow.png" alt=">"
+      <div class="headerContainer">
+        <div class="introText">
+          <h1 class="mainTitle text-center">
+            We sell fresh
+            <span id="underlined"
+              >beef <img src="assets/icons/underline.svg" alt=""
             /></span>
-          </a>
-        </div>
-      </div>
-
-      <div class="approved flex">
-        <!-- user profiles -->
-        <div class="profilesContainer flex">
-          <div class="profileImg imgDiv">
-            <img
-              class="image-fill"
-              src="assets/images/approved-img1.png"
-              alt=""
-            />
-          </div>
-          <div class="profileImg imgDiv">
-            <img
-              class="image-fill"
-              src="assets/images/approved-img2.png"
-              alt=""
-            />
-          </div>
-          <div class="profileImg imgDiv">
-            <img
-              class="image-fill"
-              src="assets/images/approved-img3.png"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <!-- approved text -->
-        <div class="flex-center">
-          <p class="text-500">
-            We're globally accepted and approved by the government
+            meet at an affordable price.
+          </h1>
+          <p class="text-center my-1 text-550">
+            We sell fresh meat products including pork, beef and chicken and
+            affordable prices
           </p>
+          <div class="flex-center">
+            <a class="btn text-300" href="#products">
+              View our products
+              <span class="ml-05"
+                ><img src="assets/icons/arrow.png" alt=">"
+              /></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="approved flex">
+          <!-- user profiles -->
+          <div class="profilesContainer flex">
+            <div class="profileImg imgDiv">
+              <img
+                class="image-fill"
+                src="assets/images/approved-img1.png"
+                alt=""
+              />
+            </div>
+            <div class="profileImg imgDiv">
+              <img
+                class="image-fill"
+                src="assets/images/approved-img2.png"
+                alt=""
+              />
+            </div>
+            <div class="profileImg imgDiv">
+              <img
+                class="image-fill"
+                src="assets/images/approved-img3.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- approved text -->
+          <div class="flex-center">
+            <p class="text-500">
+              We're globally accepted and approved by the government
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -160,7 +162,7 @@
       <div class="tabsContainer">
         <div class="tabs flex scroll-x hide-scrollbar mb-2 container-fluid">
           <!-- tab -->
-          <div class="tab active flex-center" data-tab-target="#frozen-beef">
+          <button class="tab active flex-center" data-tab-target="#frozen-beef">
             <div class="tabImg imgDiv">
               <img
                 class="image-fill"
@@ -169,9 +171,9 @@
               />
             </div>
             <p>Frozen beef</p>
-          </div>
+          </button>
           <!-- tab -->
-          <div class="tab flex-center" data-tab-target="#frozen-chicken">
+          <button class="tab flex-center" data-tab-target="#frozen-chicken">
             <div class="tabImg imgDiv">
               <img
                 class="image-fill"
@@ -180,9 +182,9 @@
               />
             </div>
             <p>Frozen chicken</p>
-          </div>
+          </button>
           <!-- tab -->
-          <div class="tab flex-center" data-tab-target="#frozen-veggies">
+          <button class="tab flex-center" data-tab-target="#frozen-veggies">
             <div class="tabImg imgDiv">
               <img
                 class="image-fill"
@@ -191,7 +193,7 @@
               />
             </div>
             <p>Frozen veggies</p>
-          </div>
+          </button>
           <!--  -->
         </div>
 
@@ -520,7 +522,16 @@
       <div class="mapForm">
         <!-- map -->
         <div class="map imgDiv">
-          <img class="image-fill" src="assets/images/map.png" alt="" />
+          <!-- <img class="image-fill" src="assets/images/map.png" alt="" /> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.7481538150327!2d-1.2418072336041632!3d5.106080210458458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfddfe51f0097d69%3A0x46ef0966d43314e6!2s35%20King%20Aggrey%20Street%2C%20Cape%20Coast!5e0!3m2!1sen!2sgh!4v1671468999381!5m2!1sen!2sgh"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div class="form card">
           <!-- form -->
