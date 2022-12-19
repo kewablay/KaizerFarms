@@ -280,7 +280,7 @@ nav {
   display: flex;
   flex-direction: column;
   color: black;
-  font-weight: 600;
+  font-weight: 500;
 }
 .link:hover {
   background: var(--clr-gray-200);
@@ -396,10 +396,13 @@ nav {
 }
 .tab {
   border-radius: 2rem;
+  /* background: white !important; */
+  background: white;
   border: 1px solid black;
   padding: 0.35rem;
   padding-right: calc(var(--space-100) + 0.2rem);
   flex: none;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 .tabs .active {
@@ -557,16 +560,155 @@ footer {
 @media (min-width: 992px) {
   :root {
     /* font sizes */
-    --text-900: 62px;
-    --text-800: 45px;
-    --text-700: 35px;
+    --text-900: 55px;
+    --text-800: 43px;
+    --text-700: 32px;
     --text-600: 28px;
-    --text-500: 25px;
+    --text-500: 21px;
     --text-550: 24px;
     --text-400: 22px;
-    --text-300: 20px;
+    --text-300: 16px;
     --text-350: 19px;
     --text-200: 16px;
     --text-100: 12px;
+
+    --profileImg-w: 30px;
+    --profileImg-h: 60px;
+  }
+
+  .btn {
+    padding: 1.2rem 1rem;
+  }
+
+  /* nav styling  */
+  .navLinks {
+    position: static;
+    display: flex;
+    width: fit-content;
+    padding: none;
+    background: transparent;
+  }
+  .link {
+    color: white;
+    padding: 1rem;
+    flex-direction: row;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: left;
+  }
+  .link:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .link:hover {
+    background: transparent;
+    border-bottom: 1px solid var(--clr-gray-700);
+  }
+  .menuIcon {
+    display: none;
+  }
+
+  /* Main header styling */
+  .header {
+    height: 90vh;
+  }
+  .headerContainer {
+    max-width: 60%;
+    margin: auto;
+  }
+  .introText {
+    margin: auto;
+    margin-top: 20%;
+  }
+  .approved {
+    height: 3.5rem;
+  }
+
+  /* Who we are section styling  */
+  .aboutContent {
+    flex-direction: row;
+  }
+  .about .subTitle {
+    text-align: left;
+  }
+  .aboutContent > div {
+    flex-basis: 50%;
+  }
+
+  /* Services section styles */
+  .servicesContainer {
+    flex-direction: row;
+    width: fit-content;
+    margin: auto;
+  }
+  /* add additional styling */
+
+  /* Our products section styles */
+  .tabs {
+    justify-content: center;
+  }
+  .tabContentList {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Customer reviews Styling */
+  .reviews {
+    display: flex;
+    justify-content: center;
+  }
+  .mapForm {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .map {
+    /* width:  */
+    height: 35rem;
+  }
+  .form {
+    transform: translateY(0%);
+    transform: translateX(-20%);
+    height: 25rem;
+    width: 70%;
+    padding: 3rem 2rem;
+  }
+
+  .form label {
+    font-size: var(--text-300);
+  }
+  .form input,
+  .form textarea {
+    padding: 0.8rem;
+  }
+  .form .mb-05 {
+    margin-bottom: 1.2rem;
+  }
+
+  /* Call us now styling */
+  /* Call us now styling  */
+  .callUs .card {
+    max-width: 50rem;
+    margin: auto;
+  }
+  .callUs .cardImage {
+    flex-basis: 30%;
+  }
+  .callUs .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .callUs .cardContent {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  /* footer section styles */
+  footer {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  footer .flex-col {
+    align-items: flex-start;
   }
 }
