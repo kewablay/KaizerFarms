@@ -160,7 +160,7 @@ button {
   padding: var(--space-400) 0;
 }
 .px-auto {
-  padding-left: auto !important`;
+  padding-left: auto !important;
   padding-right: auto !important;
 }
 .mx-auto {
@@ -236,6 +236,11 @@ button {
   padding: 0.7rem 1rem;
   background: var(--clr-red);
   color: white;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.btn:hover{
+  background-color: rgb(223, 6, 6);
 }
 .card {
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
@@ -300,6 +305,7 @@ nav {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.7)
     ),
+    /* Background Image */
     url("../assets/images/hero-image.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -364,14 +370,18 @@ nav {
 .servicesContainer {
   flex-direction: column;
   gap: var(--space-200);
+  
 }
 .servicesCard {
   width: var(--servicesCard-w);
   height: var(--servicesCard-h);
-
   max-width: 20rem;
   margin: auto;
   border-bottom: 2.5px solid var(--clr-red);
+ 
+}
+.servicesCard:hover{
+  transform: scale(0.9);
 }
 .servicesCard img {
   width: var(--servicesImg-w);
@@ -404,6 +414,10 @@ nav {
   flex: none;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+.tab:hover{
+background: var(--clr-gray-900);
+color:var(--clr-gray-700)
 }
 .tabs .active {
   background: var(--clr-gray-900);
