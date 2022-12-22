@@ -770,6 +770,8 @@ footer {
   }
   .introText p {
     width: 30rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .approved {
