@@ -47,6 +47,7 @@ button {
   --space-300: 3rem;
   --space-400: 4rem;
   --space-500: 5rem;
+  --space-600: 6rem;
 
   /* font sizes */
   --text-900: 30px;
@@ -74,7 +75,7 @@ button {
 
   /* component variables */
   --tabContents-h: 28rem;
-  --profileImg-w: 30px;
+  --profileImg-w: 40px;
   --profileImg-h: 40px;
 }
 
@@ -326,7 +327,7 @@ nav {
 
 .profileImg {
   width: var(--profileImg-w);
-  width: var(--profileImg-h);
+  height: var(--profileImg-h);
   background: var(--clr-gray-700);
   border-radius: 50%;
   border: 3px solid black;
@@ -572,12 +573,15 @@ footer {
     --text-200: 16px;
     --text-100: 12px;
 
-    --profileImg-w: 30px;
-    --profileImg-h: 60px;
+    --profileImg-w: 50px;
+    --profileImg-h: 50px;
   }
 
+  .mb-4 {
+    margin-bottom: var(--space-600);
+  }
   .btn {
-    padding: 1.2rem 1rem;
+    padding: 1rem 1.5rem;
   }
 
   /* nav styling  */
@@ -609,18 +613,21 @@ footer {
 
   /* Main header styling */
   .header {
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .headerContainer {
-    max-width: 60%;
+    max-width: 50%;
     margin: auto;
   }
   .introText {
     margin: auto;
-    margin-top: 20%;
+    /* margin-top: 20%; */
   }
   .approved {
-    height: 3.5rem;
+    height: 3rem;
   }
 
   /* Who we are section styling  */
@@ -632,6 +639,9 @@ footer {
   }
   .aboutContent > div {
     flex-basis: 50%;
+  }
+  .about .info {
+    padding: 3rem;
   }
 
   /* Services section styles */
@@ -656,6 +666,13 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+  /* Contact us styling */
+  .contactIntro {
+    max-width: 60%;
+    margin: auto;
+    /* margin-bottom: var(--space-200) !important; */
+  }
   .mapForm {
     display: flex;
     justify-content: flex-start;
@@ -667,7 +684,7 @@ footer {
   .form {
     transform: translateY(0%);
     transform: translateX(-20%);
-    height: 25rem;
+    /* height: 25rem; */
     width: 70%;
     padding: 3rem 2rem;
   }
@@ -677,10 +694,11 @@ footer {
   }
   .form input,
   .form textarea {
-    padding: 0.8rem;
+    padding: 0.9rem;
+    width: 80%;
   }
   .form .mb-05 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
   }
 
   /* Call us now styling */
