@@ -35,3 +35,14 @@ tabs.forEach((tab) => {
     tabContent.classList.add("active");
   });
 });
+
+// Animations with gsap
+const tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
+
+tl.from(".seq", {
+  stagger: .2,
+  clipPath: "clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+  opacity: 0,
+  y: 20,
+  duration: 1.2,
+})

@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaizer Farms</title>
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS js import  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- link to css -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -26,19 +31,19 @@
     <section class="header container-fluid text-white mb-4">
       <div class="headerContainer">
         <div class="introText">
-          <h1 class="mainTitle text-center">
+          <h1 class="seq mainTitle text-center">
             We sell fresh
             <span id="underlined"
               >beef <img loading="lazy" src="assets/icons/underline.svg" alt=""
             /></span>
             meet at an affordable price.
           </h1>
-          <p class="text-center my-1 text-550">
+          <p class="seq text-center my-1 text-550">
             We sell fresh meat products including pork, beef and chicken and
             affordable prices
           </p>
-          <div class="flex-center">
-            <a class="btn text-300" href="#products">
+          <div class="seq flex-center">
+            <a class="seq btn text-300" href="#products">
               View our products
               <span class="ml-05"
                 ><img loading="lazy" src="assets/icons/arrow.png" alt=">"
@@ -47,7 +52,7 @@
           </div>
         </div>
 
-        <div class="approved flex-center">
+        <div class="seq approved flex-center">
           <!-- user profiles -->
           <div class="profilesContainer flex">
             <div class="profileImg imgDiv">
@@ -103,7 +108,7 @@
             Schneider, DVM.
           </p>
         </div>
-        <div class="aboutImage">
+        <div class="aboutImage anim">
           <img
             loading="lazy"
             class="w-full"
@@ -118,7 +123,7 @@
     <section class="services bg-gray py-4 mb-4" id="services">
       <h2 class="title">Services</h2>
 
-      <div class="servicesContainer flex">
+      <div class="servicesContainer flex" data-aos="fade-up">
         <!-- card -->
         <div class="servicesCard card">
           <div class="cardImg flex-center">
@@ -222,7 +227,7 @@
           <!--  -->
         </div>
 
-        <div class="tabContentList hide-scrollbar">
+        <div data-aos="fade-up" class="tabContentList hide-scrollbar">
           <!-- Frozen beef tab Content  -->
           <div
             id="frozen-beef"
@@ -508,7 +513,10 @@
       </div>
       <h2 class="title">Our customers are happy</h2>
 
-      <div class="reviews container-fluid flex scroll-x hide-scrollbar">
+      <div
+        data-aos="fade-up"
+        class="reviews container-fluid flex scroll-x hide-scrollbar"
+      >
         <!-- review card -->
         <div class="reviewCard card">
           <img
@@ -693,7 +701,7 @@
           class="watermarkImg"
         />
       </div>
-      <div class="card flex">
+      <div data-aos="fade-up" class="card flex">
         <div class="cardImage">
           <img loading="lazy" src="assets/icons/hands.png" alt="phone call" />
         </div>
@@ -730,6 +738,20 @@
       </div>
     </footer>
 
+    <script>
+      // AOS initialization
+      AOS.init({
+        mirror: true,
+        delay: 150,
+        duration: 700,
+      });
+    </script>
+
+    <!-- Gsap imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <!-- link to js -->
     <script src="js/index.js"></script>
   </body>
 </html>

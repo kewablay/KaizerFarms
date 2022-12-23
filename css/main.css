@@ -393,6 +393,7 @@ nav {
   max-width: 20rem;
   margin: auto;
   border-bottom: 2.5px solid var(--clr-red);
+  transition: all .3s ease;
 }
 .servicesCard:hover {
   transform: scale(0.9);
