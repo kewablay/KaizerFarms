@@ -81,7 +81,7 @@ button {
 
 /* utility classes */
 .wrapContent {
-  max-width: 1536px;
+  max-width: 1600px;
   margin: auto;
 }
 .imgDiv {
@@ -906,6 +906,7 @@ footer {
     transform: translateX(-20%);
     /* height: 25rem; */
     width: 70%;
+    max-width: 40rem;
     padding: 3rem 2rem;
   }
 
