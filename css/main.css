@@ -107,6 +107,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .flex-start {
   display: flex;
@@ -220,9 +221,7 @@ button {
 .text-250 {
   font-size: var(--text-250);
 }
-.text-center {
-  text-align: center;
-}
+
 
 /* Component classes */
 .watermark {
@@ -253,7 +252,7 @@ button {
   background: var(--clr-red);
   color: white;
   border-radius: 8px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .btn:hover {
   background-color: rgb(223, 6, 6);
@@ -321,7 +320,7 @@ nav {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.7)
     ),
-    /* Background Image */ url("../assets/images/hero-image.png");
+    /* Background Image */ url("../assets/images/goulash-g163b0ba39_640-min.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -499,7 +498,7 @@ nav {
 }
 .customerReviews .watermark {
   top: 20%;
-  height: 20%
+  height: 20%;
   left: 0;
   z-index: 2;
 }
