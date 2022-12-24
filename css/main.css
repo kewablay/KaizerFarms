@@ -514,6 +514,9 @@ nav {
   position: relative;
   z-index: 10;
 }
+.reviewCard:hover{
+  transform: scale(1.1);
+}
 .reviewProfileImg {
   width: 60px;
   height: 60px;
