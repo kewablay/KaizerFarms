@@ -46,3 +46,27 @@ tl.from(".seq", {
   y: 20,
   duration: 1.2,
 })
+// carousel effect //
+let i = 0;
+let images = [];
+let slideTime = 3000; // 3 seconds
+
+images[0] = '../assets/images/back1.jpeg';
+images[1] = '../assets/images/back2.jpg';
+images[2] = '../assets/images/back.jpeg';
+images[3] = '../assets/images/back4.jpg';
+images[4] = '../assets/images/back3.jpg';
+
+function changePicture() {
+    const hero = document.querySelector('#hero');
+    hero.style.backgroundImage = " linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)),url(" + images[i] + ")";
+
+
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout(changePicture, slideTime);
+}
+window.onload = changePicture;
