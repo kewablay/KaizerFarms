@@ -481,7 +481,11 @@ nav {
   border-radius: 10px;
   flex: none;
 }
+.products img:hover{
+  transform: scale(1.1);
+  transition: .5s;
 
+}
 .cardContent .btn{
   cursor: pointer;
   font-weight: 800;
