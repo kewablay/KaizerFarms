@@ -481,7 +481,15 @@ nav {
   border-radius: 10px;
   flex: none;
 }
+.products img:hover{
+  transform: scale(1.1);
+  transition: .5s;
 
+}
+.cardContent .btn{
+  cursor: pointer;
+  font-weight: 800;
+}
 .products .cardImg {
   height: 14rem;
   border-radius: 10px;
@@ -649,6 +657,8 @@ footer {
   #underlined img {
     bottom: -9px;
   }
+  
+  
   /* Who we are section styling  */
   .about .info {
     padding: 3rem;
@@ -952,5 +962,34 @@ footer {
 
   footer .flex-col {
     align-items: flex-start;
+  }
+}
+@media (width <= 390px) {
+  h1{
+    font-size: var(--text-800);
+    text-align: center;
+  }
+  .seq {
+    padding: 1.2rem  0.8rem;
+    margin-top:0;
+   
+  }
+  .products .card{
+    width: 16rem;
+  }
+  h4{
+    font-size:15px;
+  }
+  .reviewCard .card{
+    max-width:16rem;
+  
+  }
+  .cardContent .btn{
+    padding: 0.6rem 0.9rem;
+    margin-top:18px;
+    font-size: 12px;
+    font-weight:var(--text-800);
+    cursor: pointer;
+
   }
 }
