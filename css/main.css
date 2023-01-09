@@ -27,6 +27,11 @@ button {
   border: none;
 }
 
+.logo img{
+  width:50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 :root {
   /* colors */
   --clr-red: #c70d0e;
@@ -320,7 +325,7 @@ nav {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.7)
     ),
-    /* Background Image */ url("../assets/images/goulash-g163b0ba39_640-min.jpg");
+    /* Background Image */ url("../assets/images/back2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,7 +482,7 @@ nav {
 
 .products .card {
   width: 18rem;
-  border: 1px solid gray;
+  border: 1px solid var(--clr-red);
   border-radius: 10px;
   flex: none;
 }
@@ -524,6 +529,7 @@ nav {
 }
 .reviewCard:hover{
   transform: scale(1.1);
+  transition: .3s;
 }
 .reviewProfileImg {
   width: 60px;
@@ -631,6 +637,11 @@ footer {
   margin-right: var(--space-50);
 }
 
+/* logo */
+.btm-logo img{
+  width:60px;
+  border-radius: 50%;
+}
 @media (min-width: 480px) {
   /* header styles */
   .introText {
@@ -976,6 +987,7 @@ footer {
   }
   .products .card{
     width: 16rem;
+    margin-right: 10px;
   }
   h4{
     font-size:15px;
@@ -986,10 +998,15 @@ footer {
   }
   .cardContent .btn{
     padding: 0.6rem 0.9rem;
-    margin-top:18px;
+    margin:18px 10px 0 0;
+    
     font-size: 12px;
     font-weight:var(--text-800);
     cursor: pointer;
 
+  }
+  .btm-logo img{
+    width:50px;
+    border-radius: 50%;
   }
 }
