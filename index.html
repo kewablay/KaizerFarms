@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fresh and Frozen Meat</title>
-    <link rel="icon" type="image" href="./assets/icons/kaizer farms.ico">
+    <link rel="icon" type="image" href="./assets/icons/kaizer.png">
     <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- AOS js import  -->
@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="wrapContent">
-    <nav class="bg-dark flex flex-between container-fluid">
+    <nav class="bg-light flex flex-between container-fluid">
       <div class="text-white logo">
-        <img src="./assets/icons/kaizer farms.ico" alt="logo">
+        <img src="./assets/icons/kaizer.png" alt="logo">
+        <h4 class="logo-text">Kaizer Farms</h4>
       </div>
+      
       <div class="navLinks">
         <a href="#" class="link">Home</a>
         <a href="#products" class="link">Products</a>
@@ -35,11 +37,8 @@
       <div class="headerContainer">
         <div class="introText">
           <h1 class="seq mainTitle text-center">
-            We sell fresh meat products including pork
-            <span id="underlined"
-              >beef <img loading="lazy" src="assets/icons/underline.svg" alt=""
-            /></span>
-            chicken at affordable prices
+            We sell fresh meat products including  pork
+            beef,chicken at affordable prices
           </h1>
           <div class="seq flex-center">
             <a class="seq btn text-300" href="#products">
@@ -96,7 +95,7 @@
       <div class="aboutContent flex-between">
         <div class="container-fluid info">
           <h3 class="subTitle">We are KAIZER Farms</h3>
-          <p>
+          <p class="about-text">
             A 50 sow farrow-to-finish open-pen operation, which utilizes IMO and
             currently produces up to 600 pigs annually. We produce pigs that are
             sold to various food vendors, restaurants and to customers at the
@@ -106,6 +105,11 @@
             the past 2 years. Our consulting herd veterinarian is Dr. Peter
             Schneider, DVM.
           </p>
+          <div class="order-btn">
+            <a href="#products">
+            <button class="order">Order Product</button>
+          </a>
+          </div>
         </div>
         <div class="aboutImage anim">
           <img
@@ -178,8 +182,7 @@
           <div
             id="frozen-beef"
             class="tabContent active container-fluid flex scroll-x hide-scrollbar"
-            data-tab-content
-          >
+            data-tab-content >
             <!-- product card -->
             <div class="card">
               <div class="cardImg imgDiv">
@@ -193,7 +196,6 @@
               <div class="cardContent">
                 <h4 class="mb-05">Full Pan beef</h4>
                 <p class="mb-1">100 GHC</p>
-                
                 <div class="btn text-300 flex-center">
                   <span class="mr-05"
                     ><img
@@ -374,8 +376,8 @@
                 <h4 class="mb-05">Fresh Carrots</h4>
                 <p class="mb-1">10 GHC</p>
                 <div class="btn text-300 flex-center">
-                  <span class="mr-05"
-                    ><img
+                  <span class="mr-05">
+                    <img
                       loading="lazy"
                       id="cart"
                       src="assets/icons/cart.png"
@@ -639,13 +641,13 @@
         <div class="map imgDiv">
           <!-- <img loading="lazy" class="image-fill" src="assets/images/map.png" alt="" /> -->
           <iframe
-            src="https://www.google.com/maps/place/Church+Of+Pentecost/@5.1181402,-1.26964,19z/data=!4m6!3m5!1s0xfddfeea883fc36b:0xe55b697f09e5ed15!4b1!8m2!3d5.1181402!4d-1.269093"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1986.9552000124174!2d-1.2690928!3d5.1181402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfddfeea883fc36b%3A0xe55b697f09e5ed15!2sChurch%20Of%20Pentecost!5e0!3m2!1sen!2sgh!4v1673625368867!5m2!1sen!2sgh"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <div class="form card">
@@ -719,7 +721,7 @@
     <footer class="bg-dark container-fluid py-4 text-400">
       
       <div class="flex-center mb-3 btm-logo">
-        <img src="./assets/icons/kaizer farms.ico" alt="logo">
+        <img src="./assets/icons/kaizer.png" alt="logo">
       </div>
       <div class="flex-col gap-1 mb-3">
         <a href="#">Home</a>
