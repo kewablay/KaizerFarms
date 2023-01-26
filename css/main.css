@@ -268,12 +268,7 @@ button {
   flex-direction: row;
   justify-content:center;
   align-items: center;
-}
-.logo-text{
- margin-left: 1rem;
- font-weight: 500;
- color: var(--clr-red)
-}
+ } 
 .order{
   padding: 0.7rem 1rem;
   background: var(--clr-red);
@@ -301,14 +296,14 @@ nav {
 }
 .navLinks {
   position: absolute;
-  top: -50%;
+  top: -80%;
   left: 0;
   width: 100%;
   background-color: var(--clr-balck-700);
   z-index: var(--index-4);
   transition: 0.35s ease;
   /* height: 50%; */
-   /* box-shadow: var(--clr-balck-700) -4px 9px 25px -6px; */ 
+   /* box-shadow: var(--clr-balck-700) -4px 9px 25px -6px;  */
 }
 .menuIcon {
   background: var(--clr-balck-700);
@@ -323,7 +318,7 @@ nav {
 }
 .link {
   /* width: 100%; */
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -353,6 +348,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .introText {
   margin-top: 20%;
 }
@@ -442,7 +438,6 @@ nav {
 }
 .tab {
   border-radius: 2rem;
-  /* background: white !important; */
   background: white;
   border: 1px solid black;
   padding: 0.35rem;
@@ -656,7 +651,7 @@ footer {
 
 /* logo */
 .btm-logo img{
-  width:6rem;
+  width:5rem;
   
 }
 @media (min-width: 480px) {
@@ -681,12 +676,6 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* header styles */
-  #underlined img {
-    bottom: -9px;
-  }
-  
-  
   /* Who we are section styling  */
   .about .info {
     padding: 3rem;
@@ -720,6 +709,39 @@ footer {
   .form {
     max-width: 70%;
   }
+  h1 {
+    font-size: var(--text-800);
+    text-align: center;
+  }
+  div .seq {
+    padding: 1rem  0.8rem;
+    margin-top:0;
+   
+  }
+  .products .card{
+    width: 18rem;
+    margin-right: 5px;
+  }
+  h4{
+    font-size:15px;
+  }
+  .reviewCard .card{
+    max-width:16rem;
+  
+  }
+  .cardContent .btn{
+    padding: 0.7rem 0.9rem;
+    margin:18px 10px 0 0;
+    font-size: 15px;
+    font-weight:var(--text-900);
+    cursor: pointer;
+
+  }
+
+.logo img{
+  width:3.5rem;
+    cursor: pointer;
+}
 }
 
 /* Tablet screens */
@@ -837,7 +859,7 @@ footer {
     margin-bottom: var(--space-600);
   }
   .btn {
-    padding: 1rem 1rem; 
+    padding: 1rem 1.5rem; 
     
   }
 
@@ -854,7 +876,7 @@ footer {
     padding: 1rem;
     flex-direction: row;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
   }
   .link:not(:last-child) {
@@ -877,7 +899,7 @@ footer {
   }
   .headerContainer {
     margin: auto;
-    margin-bottom: 10%
+    margin-bottom: 10%;
   }
   .introText {
     margin: auto;
@@ -993,39 +1015,6 @@ footer {
     align-items: flex-start;
   }
 }
-@media (width <= 390px) {
-  h1{
-    font-size: var(--text-800);
-    text-align: center;
-  }
-  div .seq {
-    padding: 1rem  0.8rem;
-    margin-top:0;
-   
-  }
-  .products .card{
-    width: 18rem;
-    margin-right: 5px;
-  }
-  h4{
-    font-size:15px;
-  }
-  .reviewCard .card{
-    max-width:16rem;
-  
-  }
-  .cardContent .btn{
-    padding: 0.6rem 0.9rem;
-    margin:18px 10px 0 0;
-    
-    font-size: 12px;
-    font-weight:var(--text-800);
-    cursor: pointer;
-
-  }
-
-.logo img{
-  width:3.5rem;
-    cursor: pointer;
-}
+@media(min-width: 480px) {
+ 
 }
