@@ -51,11 +51,12 @@ let i = 0;
 let images = [];
 let slideTime = 3000; // 3 seconds
 
-images[0] = '../assets/images/back1.jpeg';
+images[0] = '../assets/images/back6.jpg';
 images[1] = '../assets/images/back2.jpg';
 images[2] = '../assets/images/back.jpeg';
 images[3] = '../assets/images/back4.jpg';
 images[4] = '../assets/images/back3.jpg';
+images[5] = '../assets/images/back8.jpg';
 
 function changePicture() {
     const hero = document.querySelector('#hero');

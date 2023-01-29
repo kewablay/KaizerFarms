@@ -383,13 +383,13 @@ nav {
 
 /* Who We Are section styles*/
 
-.about .subTitle {
+.about{
   text-align: center;
 }
-.aboutContent {
+/* .aboutContent {
   flex-direction: column-reverse;
   gap: var(--space-200);
-}
+} */
 .about-text{
   line-height:1.5;
 }
@@ -641,12 +641,34 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+/* Social Media */
 .socialLinks {
   display: flex;
   align-items: center;
 }
-.socialLinks img:not(:last-child) {
-  margin-right: var(--space-50);
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background:#FD1D1D;
+  color: white;
 }
 
 /* logo */
@@ -677,14 +699,21 @@ footer {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* Who we are section styling  */
+  .aboutContent .container-fluid{
+    text-align: center;
+  }
   .about .info {
     padding: 3rem;
     text-align: center;
     line-height: 1.2;
+   
   }
-  .aboutImg {
+   h3.subTitle{
+    align-items: center;
+  }
+  /* .aboutImg {
     width: 80%;
-  }
+  } */
 
   /* Our products section styles */
   .tabs {
@@ -758,18 +787,18 @@ footer {
   }
 
   /* Who we are section styling  */
-  .aboutContent {
+  /* .aboutContent {
     flex-direction: row;
-  }
+  } */
   .about .subTitle {
-    text-align: left;
+    text-align: center;
   }
-  .aboutContent > div {
+  /* .aboutContent > div {
     flex-basis: 50%;
-  }
+  } */
   .about .info {
     padding: 3rem;
-    text-align: left;
+    text-align: center;
   }
 
   /* Services section styles */
@@ -920,15 +949,15 @@ footer {
   }
 
   /* Who we are section styling  */
-  .aboutContent {
+  /* .aboutContent {
     flex-direction: row;
-  }
+  } */
   .about .subTitle {
-    text-align: left;
+    text-align: center;
   }
-  .aboutContent > div {
+  /* .aboutContent > div {
     flex-basis: 50%;
-  }
+  } */
   .about .info {
     padding: 3rem;
   }
